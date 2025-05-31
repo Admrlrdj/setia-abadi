@@ -6,8 +6,9 @@
 }
 
 html {
-    /* Tambahkan ini */
     overflow-x: hidden;
+    scroll-behavior: smooth;
+    /* Tambahan untuk scroll yang lebih halus */
 }
 
 body {
@@ -16,7 +17,7 @@ body {
 }
 
 header {
-    background-color: #FF6B35;
+    background-color: #FFB30E;
     color: white;
     padding: 1rem;
     position: sticky;
@@ -31,6 +32,8 @@ nav {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 1rem;
+    /* Tambahan padding untuk mobile */
 }
 
 .logo {
@@ -62,11 +65,13 @@ nav {
 }
 
 .nav-links a:hover {
-    color: #FFD700;
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/bg_home.jpeg');
+    /* Diperbaiki: Path ke gambar background */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/bg_home.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -80,6 +85,8 @@ nav {
     text-align: center;
     color: white;
     padding: 1rem;
+    max-width: none;
+    /* Dgabungkan jadi satu */
 }
 
 .hero h1 {
@@ -96,7 +103,7 @@ nav {
 }
 
 .cta-button {
-    background-color: #FF6B35;
+    background-color: #FFB30E;
     color: white;
     padding: 0.8rem 2rem;
     border: none;
@@ -104,12 +111,14 @@ nav {
     font-size: 1.1rem;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
     text-decoration: none;
 }
 
 .cta-button:hover {
-    background-color: #e85a2a;
+    /* Diperbaiki: Warna hover disesuaikan */
+    background-color: #e6a20d;
+    transform: scale(1.05);
 }
 
 section {
@@ -118,29 +127,11 @@ section {
     margin: 0 auto;
 }
 
-.hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/bg_home.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    min-height: 100vh;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    padding: 1rem;
-    max-width: none;
-}
-
 .section-title {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 3rem;
-    color: #FF6B35;
+    color: #FFB30E;
     position: relative;
 }
 
@@ -149,7 +140,7 @@ section {
     display: block;
     width: 80px;
     height: 3px;
-    background-color: #FF6B35;
+    background-color: #FFB30E;
     position: absolute;
     bottom: -10px;
     left: 50%;
@@ -168,6 +159,10 @@ section {
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    display: flex;
+    /* Tambahan untuk layout yang lebih baik */
+    flex-direction: column;
+    /* Tambahan */
 }
 
 .menu-item:hover {
@@ -176,35 +171,47 @@ section {
 
 .menu-item img {
     width: 100%;
-    height: 300px;
+    height: 250px;
+    /* Sedikit dikurangi agar konten pas */
     object-fit: cover;
 }
 
 .menu-item-content {
     padding: 1.5rem;
+    display: flex;
+    /* Tambahan */
+    flex-direction: column;
+    /* Tambahan */
+    flex-grow: 1;
+    /* Tambahan agar semua card sama tinggi */
 }
 
 .menu-item h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
-    color: #FF6B35;
+    color: #FFB30E;
 }
 
 .menu-item p {
     margin-bottom: 1rem;
     color: #666;
+    flex-grow: 1;
+    /* Tambahan agar deskripsi mendorong harga ke bawah */
 }
 
 .price {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #FF6B35;
+    color: #FFB30E;
+    margin-top: auto;
+    /* Tambahan */
 }
 
 .contact {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
+    align-items: start;
 }
 
 .contact-info,
@@ -215,11 +222,15 @@ section {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+.location p {
+    margin-bottom: 1rem;
+}
+
 .contact-info h3,
 .location h3 {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
-    color: #FF6B35;
+    color: #FFB30E;
 }
 
 .contact-item {
@@ -231,7 +242,7 @@ section {
 .contact-icon {
     width: 40px;
     height: 40px;
-    background-color: #FF6B35;
+    background-color: #FFB30E;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -239,6 +250,7 @@ section {
     margin-right: 1rem;
     color: white;
     font-size: 1.2rem;
+    flex-shrink: 0;
 }
 
 .map {
@@ -271,22 +283,28 @@ section {
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
 }
 
 .testimonial p {
     font-style: italic;
     margin-bottom: 1rem;
+    color: #555;
+    flex-grow: 1;
 }
 
 .testimonial-author {
     font-weight: bold;
-    color: #FF6B35;
+    color: #FFB30E;
+    text-align: right;
+    margin-top: auto;
 }
 
 footer {
     background-color: #333;
     color: white;
-    padding: 2rem;
+    padding: 2rem 1rem;
     text-align: center;
 }
 
@@ -296,12 +314,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.footer-logo {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
 }
 
 .footer-logo img {
@@ -314,11 +326,15 @@ footer {
 .footer-links {
     display: flex;
     list-style: none;
+    padding: 0;
     margin: 1rem 0;
+    flex-wrap: wrap;
+    /* Agar rapi di mobile */
+    justify-content: center;
 }
 
 .footer-links li {
-    margin: 0 1rem;
+    margin: 0.5rem 1rem;
 }
 
 .footer-links a {
@@ -333,6 +349,7 @@ footer {
 .social-links {
     display: flex;
     list-style: none;
+    padding: 0;
     margin: 1rem 0;
 }
 
@@ -355,6 +372,8 @@ footer {
 #mobile-menu {
     display: none;
     cursor: pointer;
+    font-size: 1.8rem;
+    color: white;
 }
 
 #myBtn {
@@ -365,16 +384,18 @@ footer {
     z-index: 99;
     border: none;
     outline: none;
-    background-color: #FF6B35;
+    background-color: #FFB30E;
     color: white;
     cursor: pointer;
     padding: 15px;
     border-radius: 50px;
     font-size: 18px;
+    transition: background-color 0.3s;
 }
 
 #myBtn:hover {
-    background-color: #e85a2a;
+    /* Diperbaiki: Warna hover disesuaikan */
+    background-color: #e6a20d;
 }
 
 @media (max-width: 768px) {
@@ -382,11 +403,14 @@ footer {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px;
+        top: 77px;
+        /* Disesuaikan dengan tinggi header */
         left: 0;
         right: 0;
-        background-color: #FF6B35;
+        background-color: #FFB30E;
         box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 1rem 0;
     }
 
     .nav-links.active {
@@ -399,7 +423,6 @@ footer {
 
     #mobile-menu {
         display: block;
-        font-size: 1.5rem;
     }
 
     .hero h1 {

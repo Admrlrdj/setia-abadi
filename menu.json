@@ -1,0 +1,58 @@
+{
+  "menuItems": [
+    {
+      "id": 1,
+      "name": "Chicken Katsu",
+      "category": "Makanan",
+      "description": "Potongan ayam fillet renyah dengan saus spesial, disajikan dengan nasi hangat.",
+      "price": 13000,
+      "image_url": "img/teriyaki.jpeg",
+      "alt_text": "Nasi dengan Chicken Katsu"
+    },
+    {
+      "id": 2,
+      "name": "Nasi Goreng",
+      "category": "Makanan",
+      "description": "Nasi goreng klasik dengan bumbu khas BabehBurger yang menggugah selera.",
+      "price": 10000,
+      "image_url": "img/teriyaki.jpeg",
+      "alt_text": "Sepiring Nasi Goreng"
+    },
+    {
+      "id": 3,
+      "name": "Chicken Wings",
+      "category": "Makanan",
+      "description": "Sayap ayam renyah dibalut dengan saus pilihan yang pedas dan manis.",
+      "price": 18000,
+      "image_url": "img/teriyaki.jpeg",
+      "alt_text": "Chicken Wings dengan saus"
+    },
+    {
+      "id": 4,
+      "name": "French Fries",
+      "category": "Cemilan",
+      "description": "Kentang goreng renyah dan gurih, cocok untuk teman ngobrol.",
+      "price": 15000,
+      "image_url": "img/teriyaki.jpeg",
+      "alt_text": "Kentang Goreng"
+    },
+    {
+      "id": 5,
+      "name": "Chicken Teriyaki",
+      "category": "Makanan",
+      "description": "Potongan ayam lembut dengan saus teriyaki manis dan gurih, ditaburi wijen.",
+      "price": 18000,
+      "image_url": "img/teriyaki.jpeg",
+      "alt_text": "Nasi dengan Chicken Teriyaki"
+    },
+    {
+      "id": 6,
+      "name": "Lemon Tea",
+      "category": "Minuman",
+      "description": "Es teh dengan perasan lemon segar, menghilangkan dahaga seketika.",
+      "price": 10000,
+      "image_url": "img/teriyaki.jpeg",
+      "alt_text": "Segelas Es Lemon Tea"
+    }
+  ]
+}
