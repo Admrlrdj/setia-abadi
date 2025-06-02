@@ -8,7 +8,6 @@
 html {
     overflow-x: hidden;
     scroll-behavior: smooth;
-    /* Tambahan untuk scroll yang lebih halus */
 }
 
 body {
@@ -33,7 +32,6 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
-    /* Tambahan padding untuk mobile */
 }
 
 .logo {
@@ -70,14 +68,13 @@ nav {
 }
 
 .hero {
-    /* Diperbaiki: Path ke gambar background */
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/bg_home.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     min-height: 100vh;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
+    /* width: 100vw; */
+    /* margin-left: calc(-50vw + 50%); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -86,7 +83,6 @@ nav {
     color: white;
     padding: 1rem;
     max-width: none;
-    /* Dgabungkan jadi satu */
 }
 
 .hero h1 {
@@ -116,7 +112,6 @@ nav {
 }
 
 .cta-button:hover {
-    /* Diperbaiki: Warna hover disesuaikan */
     background-color: #e6a20d;
     transform: scale(1.05);
 }
@@ -148,9 +143,11 @@ section {
 }
 
 .menu {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+    /* gap: 2rem; */
+
+    margin: 0 20px;
 }
 
 .menu-item {
@@ -160,9 +157,8 @@ section {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
     display: flex;
-    /* Tambahan untuk layout yang lebih baik */
     flex-direction: column;
-    /* Tambahan */
+    margin: 0 10px;
 }
 
 .menu-item:hover {
@@ -172,18 +168,14 @@ section {
 .menu-item img {
     width: 100%;
     height: 250px;
-    /* Sedikit dikurangi agar konten pas */
     object-fit: cover;
 }
 
 .menu-item-content {
     padding: 1.5rem;
     display: flex;
-    /* Tambahan */
     flex-direction: column;
-    /* Tambahan */
     flex-grow: 1;
-    /* Tambahan agar semua card sama tinggi */
 }
 
 .menu-item h3 {
@@ -196,7 +188,6 @@ section {
     margin-bottom: 1rem;
     color: #666;
     flex-grow: 1;
-    /* Tambahan agar deskripsi mendorong harga ke bawah */
 }
 
 .price {
@@ -204,7 +195,54 @@ section {
     font-weight: bold;
     color: #FFB30E;
     margin-top: auto;
-    /* Tambahan */
+}
+
+
+.search-container {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+#menu-search-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-right: none;
+    border-radius: 30px 0 0 30px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#menu-search-input:focus {
+    border-color: #FFB30E;
+}
+
+#menu-search-button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: 2px solid #FFB30E;
+    background-color: #FFB30E;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 30px 30px 0;
+    transition: background-color 0.3s;
+}
+
+#menu-search-button:hover {
+    background-color: #e6a20d;
+    border-color: #e6a20d;
+}
+
+.menu-not-found {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #888;
+    padding: 2rem;
 }
 
 .contact {
@@ -329,7 +367,6 @@ footer {
     padding: 0;
     margin: 1rem 0;
     flex-wrap: wrap;
-    /* Agar rapi di mobile */
     justify-content: center;
 }
 
@@ -394,8 +431,32 @@ footer {
 }
 
 #myBtn:hover {
-    /* Diperbaiki: Warna hover disesuaikan */
     background-color: #e6a20d;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 30px;
+    color: #FFB30E;
+    opacity: 0.8;
+}
+
+.slick-prev {
+    left: -25px;
+}
+
+.slick-next {
+    right: -25px;
+}
+
+.slick-dots li button:before {
+    font-size: 12px;
+    color: #FFB30E;
+    opacity: 0.5;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
 }
 
 @media (max-width: 768px) {
@@ -404,7 +465,6 @@ footer {
         flex-direction: column;
         position: absolute;
         top: 77px;
-        /* Disesuaikan dengan tinggi header */
         left: 0;
         right: 0;
         background-color: #FFB30E;
@@ -439,5 +499,9 @@ footer {
 
     .footer-logo img {
         height: 35px;
+    }
+
+    .menu {
+        margin: 0;
     }
 }
