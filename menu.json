@@ -5,82 +5,180 @@
       "name": "Chicken Katsu",
       "category": "Makanan",
       "description": "Potongan ayam fillet renyah dengan saus spesial, disajikan dengan nasi hangat.",
-      "price": 13000,
-      "image_url": "img/teriyaki.jpeg",
-      "alt_text": "Nasi dengan Chicken Katsu"
+      "price": 22000,
+      "image_url": "img/katsu.jpeg",
+      "alt_text": "Nasi dengan Chicken Katsu",
+      "is_top_seller": true
     },
     {
       "id": 2,
-      "name": "Chicken Pop",
+      "name": "Nasi Goreng",
       "category": "Makanan",
-
-      "description": "Potongan ayam fillet renyah dengan saus spesial, disajikan dengan nasi hangat.",
-      "price": 10000,
-      "image_url": "img/teriyaki.jpeg",
-      "alt_text": "Sepiring Nasi Goreng"
+      "description": "Nasi goreng klasik dengan bumbu khas warkop, disajikan dengan telur mata sapi.",
+      "price": 15000,
+      "image_url": "img/nasgor.jpeg",
+      "alt_text": "Sepiring Nasi Goreng",
+      "is_top_seller": true
     },
     {
       "id": 3,
       "name": "Nasi Dadar",
       "category": "Makanan",
-      "description": "Potongan ayam fillet renyah dengan saus spesial, disajikan dengan nasi hangat.",
-      "price": 18000,
-      "image_url": "img/teriyaki.jpeg",
-      "alt_text": "Chicken Wings dengan saus"
+      "description": "Nasi putih hangat disajikan dengan telur dadar gurih yang tebal.",
+      "price": 12000,
+      "image_url": "img/dadar.jpeg",
+      "alt_text": "Nasi dengan Telur Dadar",
+      "is_top_seller": true
     },
     {
       "id": 4,
       "name": "French Fries",
       "category": "Cemilan",
-      "description": "Potongan ayam fillet renyah dengan saus spesial, disajikan dengan nasi hangat.",
+      "description": "Kentang goreng renyah yang digoreng sempurna, disajikan dengan saus sambal.",
       "price": 15000,
-      "image_url": "img/teriyaki.jpeg",
-      "alt_text": "Kentang Goreng"
+      "image_url": "img/fries.jpeg",
+      "alt_text": "Kentang Goreng",
+      "is_top_seller": true
     },
     {
       "id": 5,
-      "name": "Chicken Teriyaki",
+      "name": "Spaghetti Carbonara",
       "category": "Makanan",
-      "description": "Potongan ayam fillet renyah dengan saus spesial, disajikan dengan nasi hangat.",
-      "price": 18000,
-      "image_url": "img/teriyaki.jpeg",
-      "alt_text": "Nasi dengan Chicken Teriyaki"
+      "description": "Spaghetti dengan saus carbonara creamy, keju parmesan, dan potongan smoked beef.",
+      "price": 15000,
+      "image_url": "img/carbonara.jpeg",
+      "alt_text": "Spaghetti Carbonara",
+      "is_top_seller": true
     },
     {
       "id": 6,
-      "name": "Chicken Teriyaki",
-      "category": "Makanan",
-      "description": "Potongan ayam fillet renyah dengan saus spesial, disajikan dengan nasi hangat.",
-      "price": 18000,
-      "image_url": "img/teriyaki.jpeg",
-      "alt_text": "Nasi dengan Chicken Teriyaki"
+      "name": "Kopi Gula Aren",
+      "category": "Minuman",
+      "description": "Perpaduan kopi espresso, susu segar, dan manisnya gula aren asli.",
+      "price": 15000,
+      "image_url": "img/gulaaren.jpeg",
+      "alt_text": "Es Kopi Gula Aren",
+      "is_top_seller": true
     },
     {
       "id": 7,
-      "name": "Chicken Teriyaki",
-      "category": "Makanan",
-      "description": "Potongan ayam fillet renyah dengan saus spesial, disajikan dengan nasi hangat.",
-      "price": 18000,
-      "image_url": "img/teriyaki.jpeg",
-      "alt_text": "Nasi dengan Chicken Teriyaki"
+      "name": "Lemon Tea",
+      "category": "Minuman",
+      "description": "Teh manis dengan perasan lemon segar, pilihan tepat untuk melepas dahaga.",
+      "price": 11000,
+      "image_url": "img/lemontea.jpeg",
+      "alt_text": "Es Lemon Tea",
+      "is_top_seller": true
     },
     {
       "id": 8,
-      "name": "Chicken Teriyaki",
+      "name": "Chicken Pop",
       "category": "Makanan",
-      "description": "Potongan ayam fillet renyah dengan saus spesial, disajikan dengan nasi hangat.",
-      "price": 18000,
-      "image_url": "img/teriyaki.jpeg",
-      "alt_text": "Nasi dengan Chicken Teriyaki"
+      "description": "Potongan daging ayam renyah (popcorn chicken) dengan bumbu tabur pilihan.",
+      "price": 22000,
+      "image_url": "img/pop.jpg",
+      "alt_text": "Chicken Pop",
+      "is_top_seller": false
     },
     {
       "id": 9,
-      "name": "Lemon Tea",
+      "name": "Chicken Cabe Ijo",
+      "category": "Makanan",
+      "description": "Ayam fillet krispi yang disiram dengan sambal cabe ijo pedas dan nikmat.",
+      "price": 22000,
+      "image_url": "img/cabeijo.jpg",
+      "alt_text": "Chicken Cabe Ijo",
+      "is_top_seller": false
+    },
+    {
+      "id": 10,
+      "name": "Teh Tarik",
       "category": "Minuman",
-      "description": "Potongan ayam fillet renyah dengan saus spesial, disajikan dengan nasi hangat.",
+      "description": "Teh manis dengan perasan lemon segar, pilihan tepat untuk melepas dahaga.",
       "price": 10000,
-      "image_url": "img/teriyaki.jpeg",
-      "alt_text": "Segelas Es Lemon Tea"
+      "image_url": "img/tehtarik.jpg",
+      "alt_text": "Es Teh Tarik",
+      "is_top_seller": false
+    },
+    {
+      "id": 11,
+      "name": "Mie Goreng",
+      "category": "Makanan",
+      "description": "Mie goreng klasik dengan bumbu khas warkop, disajikan dengan telur mata sapi.",
+      "price": 14000,
+      "image_url": "img/miegoreng.jpg",
+      "alt_text": "Mie Goreng",
+      "is_top_seller": false
+    },
+    {
+      "id": 12,
+      "name": "Mie Rebus",
+      "category": "Makanan",
+      "description": "Mie rebus klasik dengan bumbu khas warkop, disajikan dengan telur mata sapi.",
+      "price": 14000,
+      "image_url": "img/mierebus.jpg",
+      "alt_text": "Mie Rebus",
+      "is_top_seller": false
+    },
+    {
+      "id": 13,
+      "name": "Kopi Americano",
+      "category": "Minuman",
+      "description": "Coffe Americano dengan perpaduan kopi espresso dan mineral.",
+      "price": 15000,
+      "image_url": "img/americano.jpg",
+      "alt_text": "Kopi Americano",
+      "is_top_seller": false
+    },
+    {
+      "id": 14,
+      "name": "Kopi Capuccino",
+      "category": "Minuman",
+      "description": "Coffe Capuccino dengan perpaduan kopi espresso dan susu segar.",
+      "price": 15000,
+      "image_url": "img/cappuccino.jpg",
+      "alt_text": "Kopi Capuccino",
+      "is_top_seller": false
+    },
+    {
+      "id": 15,
+      "name": "Kopi Caramel Macchiato",
+      "category": "Minuman",
+      "description": "Coffe Caramel Macchiato dengan perpaduan kopi espresso, susu segar, dan cokelat.",
+      "price": 15000,
+      "image_url": "img/macchiato.jpg",
+      "alt_text": "Kopi Caramel Macchiato",
+      "is_top_seller": false
+    },
+    {
+      "id": 16,
+      "name": "Matcha",
+      "category": "Minuman",
+      "description": "Minuman dengan matcha pilihan, disajikan dengan susu segar.",
+      "price": 13000,
+      "image_url": "img/matcha.jpg",
+      "alt_text": "Matcha",
+      "is_top_seller": false
+    },
+    {
+      "id": 17,
+      "name": "Chocolate",
+      "category": "Minuman",
+      "description": "Minuman dengan cokelat pilihan, disajikan dengan susu segar.",
+      "price": 13000,
+      "image_url": "img/chocolate.jpg",
+      "alt_text": "Chocolate",
+      "is_top_seller": false
+    },
+    {
+      "id": 18,
+      "name": "Lychee Tea",
+      "category": "Minuman",
+      "description": "Minuman dengan lyche pilihan, disajikan dengan susu segar.",
+      "price": 15000,
+      "image_url": "img/lychee.jpg",
+      "alt_text": "Lyche Tea",
+      "is_top_seller": false
     }
   ]
 }

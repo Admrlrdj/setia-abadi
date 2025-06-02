@@ -7,6 +7,7 @@
     <title>Menu Lengkap - Warkop Setia Abadi</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/full-menu.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
@@ -31,7 +32,7 @@
     </header>
 
     <main>
-        <section id="full-menu-page">
+        <section id="full-menu-page" class="full-menu">
             <h1 class="section-title">Menu Lengkap Kami</h1>
 
             <div class="back-button-container">
@@ -39,65 +40,6 @@
                     <i class="fas fa-arrow-left"></i> Kembali ke Halaman Utama
                 </a>
             </div>
-
-            <h2 class="menu-category-title">Makanan Berat</h2>
-            <div class="menu-grid">
-                <div class="menu-item">
-                    <img src="https://via.placeholder.com/400x250.png?text=Nasi+Goreng" alt="Nasi Goreng Spesial">
-                    <div class="menu-item-content">
-                        <h3>Nasi Goreng Spesial</h3>
-                        <p>Nasi goreng dengan bumbu rahasia, telur, ayam suwir, dan bakso.</p>
-                        <div class="price">Rp 18.000</div>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img src="https://via.placeholder.com/400x250.png?text=Chicken+Katsu" alt="Chicken Katsu Curry">
-                    <div class="menu-item-content">
-                        <h3>Chicken Katsu Curry</h3>
-                        <p>Ayam katsu renyah disiram dengan saus kari Jepang kental dan disajikan dengan nasi hangat.
-                        </p>
-                        <div class="price">Rp 25.000</div>
-                    </div>
-                </div>
-            </div>
-
-            <h2 class="menu-category-title">Kreasi Mie Instan</h2>
-            <div class="menu-grid">
-                <div class="menu-item">
-                    <img src="https://via.placeholder.com/400x250.png?text=Indomie+Carbonara" alt="Indomie Carbonara">
-                    <div class="menu-item-content">
-                        <h3>Indomie Carbonara</h3>
-                        <p>Indomie goreng disajikan dengan saus carbonara creamy, keju, dan smoked beef.</p>
-                        <div class="price">Rp 20.000</div>
-                    </div>
-                </div>
-            </div>
-
-
-            <h2 class="menu-category-title">Cemilan & Makanan Ringan</h2>
-            <div class="menu-grid">
-                <div class="menu-item">
-                    <img src="https://via.placeholder.com/400x250.png?text=Roti+Bakar" alt="Roti Bakar Coklat Keju">
-                    <div class="menu-item-content">
-                        <h3>Roti Bakar Coklat Keju</h3>
-                        <p>Roti bakar klasik dengan topping meses coklat melimpah dan parutan keju.</p>
-                        <div class="price">Rp 15.000</div>
-                    </div>
-                </div>
-            </div>
-
-            <h2 class="menu-category-title">Minuman</h2>
-            <div class="menu-grid">
-                <div class="menu-item">
-                    <img src="https://via.placeholder.com/400x250.png?text=Es+Kopi+Susu" alt="Es Kopi Susu Gula Aren">
-                    <div class="menu-item-content">
-                        <h3>Es Kopi Susu Gula Aren</h3>
-                        <p>Perpaduan espresso, susu segar, dan manisnya gula aren asli.</p>
-                        <div class="price">Rp 18.000</div>
-                    </div>
-                </div>
-            </div>
-
         </section>
     </main>
 
@@ -124,7 +66,11 @@
         </div>
     </footer>
 
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
     <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/full-menu-loader.js"></script>
 
 </body>
 

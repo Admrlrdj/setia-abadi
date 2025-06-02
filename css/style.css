@@ -1,3 +1,6 @@
+/* ================================== */
+/* GAYA UTAMA & KOMPONEN BERSAMA      */
+/* ================================== */
 * {
     margin: 0;
     padding: 0;
@@ -11,15 +14,17 @@ html {
 }
 
 body {
-    background-color: #f9f5f0;
+    background-color: #ece8e4;
     color: #333;
 }
 
+/* --- Header & Navigasi --- */
 header {
     background-color: #FFB30E;
     color: white;
     padding: 1rem;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     z-index: 100;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -67,6 +72,7 @@ nav {
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
+/* --- Hero Section --- */
 .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/saung.png');
     background-size: cover;
@@ -81,7 +87,6 @@ nav {
     max-width: 100vw;
     height: 100vh;
 }
-
 
 .hero h1 {
     font-size: 3rem;
@@ -116,6 +121,7 @@ nav {
     transform: scale(1.05);
 }
 
+/* --- Gaya Section Umum --- */
 section {
     padding: 4rem 1rem;
     max-width: 1200px;
@@ -142,161 +148,39 @@ section {
     transform: translateX(-50%);
 }
 
-.menu {
-    /* display: grid; */
-    /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
-    /* gap: 2rem; */
-    margin: 0 20px;
+.about-us {
+    background-color: #ece8e4;
+    padding-top: 100px;
 }
 
-.menu-item {
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-    display: flex;
-    flex-direction: column;
-    margin: 0 10px;
-}
-
-.menu-item:hover {
-    transform: translateY(-5px);
-}
-
-.menu-item img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
-
-.menu-item-content {
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-.menu-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: #FFB30E;
-}
-
-.menu-item p {
-    margin-bottom: 1rem;
-    color: #666;
-    flex-grow: 1;
-}
-
-.search-container {
-    margin-top: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1rem;
-}
-
-.full-menu-container {
-    text-align: center;
-    margin-top: 2rem;
-}
-
-.full-menu-button {
-    display: inline-block;
-    font-weight: bold;
-    color: #FFB30E;
-    border: 2px solid #FFB30E;
-    background-color: transparent;
-    padding: 0.8rem 2rem;
-    border-radius: 30px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.full-menu-button:hover {
-    background-color: #FFB30E;
-    color: white;
-    transform: translateY(-3px);
-    box-shadow: 0 4px 10px rgba(255, 179, 14, 0.4);
-}
-
-.full-menu-button i {
-    margin-left: 0.5rem;
-}
-
-.menu-category-title {
-    font-size: 2rem;
-    color: #333;
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid #eee;
-}
-
-.menu-grid {
+.about-us-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+    align-items: center;
 }
 
-.back-button-container {
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.back-to-home-button {
-    display: inline-block;
-    font-weight: bold;
-    color: #FFB30E;
-    background-color: transparent;
-    border: 2px solid #FFB30E;
-    padding: 0.8rem 2rem;
-    border-radius: 30px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.back-to-home-button:hover {
-    background-color: #FFB30E;
-    color: white;
-    transform: translateY(-3px);
-}
-
-.back-to-home-button i {
-    margin-right: 0.5rem;
-}
-
-#menu-search-input {
+.about-us-image img {
     width: 100%;
-    max-width: 400px;
-    padding: 12px 20px;
-    font-size: 1rem;
-    border: 2px solid #ddd;
-    border-right: none;
-    border-radius: 30px 0 0 30px;
-    outline: none;
-    transition: border-color 0.3s;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
-#menu-search-input:focus {
-    border-color: #FFB30E;
+.about-us-content .section-title {
+    text-align: left;
+    margin-bottom: 1.5rem;
 }
 
-#menu-search-button {
-    padding: 12px 20px;
-    font-size: 1rem;
-    border: 2px solid #FFB30E;
-    background-color: #FFB30E;
-    color: white;
-    cursor: pointer;
-    border-radius: 0 30px 30px 0;
-    transition: background-color 0.3s;
+.about-us-content .section-title::after {
+    left: 0;
+    transform: none;
 }
 
-#menu-search-button:hover {
-    background-color: #e6a20d;
-    border-color: #e6a20d;
+.about-us-content p {
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    color: #555;
 }
 
 .menu-not-found {
@@ -306,31 +190,6 @@ section {
     padding: 2rem;
 }
 
-.slick-prev:before,
-.slick-next:before {
-    font-size: 30px;
-    color: #FFB30E;
-    opacity: 0.8;
-}
-
-.slick-prev {
-    left: -25px;
-}
-
-.slick-next {
-    right: -25px;
-}
-
-.slick-dots li button:before {
-    font-size: 12px;
-    color: #FFB30E;
-    opacity: 0.5;
-}
-
-.slick-dots li.slick-active button:before {
-    opacity: 1;
-}
-
 .price {
     font-size: 1.2rem;
     font-weight: bold;
@@ -338,6 +197,7 @@ section {
     margin-top: auto;
 }
 
+/* --- Contact Section --- */
 .contact {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -372,7 +232,7 @@ section {
 
 .contact-item a {
     text-decoration: none;
-    color: #000
+    color: #000;
 }
 
 .contact-icon {
@@ -389,13 +249,11 @@ section {
     flex-shrink: 0;
 }
 
-/* Tambahkan ini di file CSS Anda */
 .contact-icon i {
     display: flex;
     align-items: center;
     justify-content: center;
     line-height: 1;
-    /* Mencegah line-height dari parent mengganggu posisi */
 }
 
 .map {
@@ -407,9 +265,11 @@ section {
     background-color: #f0f0f0;
 }
 
+/* --- Testimonials Section --- */
 .testimonials {
-    background-color: #fff8f0;
-    padding: 4rem 1rem;
+    background-color: #ece8e4;
+    padding-top: 100px;
+    /* padding: 4rem 1rem; */
 }
 
 .testimonial-container {
@@ -446,6 +306,7 @@ section {
     margin-top: auto;
 }
 
+/* --- Footer --- */
 footer {
     background-color: #333;
     color: white;
@@ -513,6 +374,7 @@ footer {
     color: #aaa;
 }
 
+/* --- Mobile Menu & Back to Top Button --- */
 #mobile-menu {
     display: none;
     cursor: pointer;
@@ -541,6 +403,7 @@ footer {
     background-color: #e6a20d;
 }
 
+/* --- Media Queries (Responsif) --- */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -583,11 +446,21 @@ footer {
         height: 40px;
     }
 
-    .menu {
-        margin: 0;
-    }
-
     .footer-logo img {
         height: 35px;
+    }
+
+    .about-us-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-us-content .section-title {
+        text-align: center;
+    }
+
+    .about-us-content .section-title::after {
+        left: 50%;
+        transform: translateX(-50%);
     }
 }

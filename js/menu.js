@@ -1,20 +1,24 @@
 $(document).ready(function () {
-    let allMenuItems = [];
+    let allMenuItems = []; // Variabel untuk menyimpan SEMUA item menu
     const menuContainer = $('#menu .menu');
 
     function initSlickSlider() {
         if (menuContainer.children().length > 0) {
             menuContainer.slick({
                 dots: true,
-                infinite: false,
+                infinite: true,
                 speed: 500,
                 slidesToShow: 3,
-                slidesToScroll: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                pauseOnHover: true,
+                pauseOnFocus: true,
                 responsive: [{
                         breakpoint: 1024,
                         settings: {
                             slidesToShow: 2,
-                            slidesToScroll: 2,
+                            slidesToScroll: 1,
                             infinite: true,
                             dots: true
                         }
@@ -35,7 +39,6 @@ $(document).ready(function () {
         if (menuContainer.hasClass('slick-initialized')) {
             menuContainer.slick('unslick');
         }
-
         menuContainer.empty();
 
         if (items.length === 0) {
@@ -64,15 +67,18 @@ $(document).ready(function () {
         });
 
         initSlickSlider();
-        setupMenuAnimation();
     }
 
     $.ajax({
         url: 'menu.json',
         dataType: 'json',
         success: function (data) {
-            allMenuItems = data.menuItems;
-            renderMenu(allMenuItems);
+            allMenuItems = data.menuItems; // Simpan semua menu untuk fitur pencarian
+
+            // Filter hanya item yang merupakan top seller untuk ditampilkan di slider awal
+            const topSellers = allMenuItems.filter(item => item.is_top_seller === true);
+
+            renderMenu(topSellers);
         },
         error: function (jqXHR, textStatus, errorThrown) {
             console.error("Gagal memuat menu:", textStatus, errorThrown);
@@ -82,6 +88,15 @@ $(document).ready(function () {
 
     function performSearch() {
         const searchTerm = $('#menu-search-input').val().toLowerCase();
+
+        // Jika kotak pencarian kosong, tampilkan lagi top seller
+        if (searchTerm === "") {
+            const topSellers = allMenuItems.filter(item => item.is_top_seller === true);
+            renderMenu(topSellers);
+            return;
+        }
+
+        // Jika ada input, cari dari SEMUA menu
         const filteredItems = allMenuItems.filter(item => item.name.toLowerCase().includes(searchTerm));
         renderMenu(filteredItems);
     }

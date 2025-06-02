@@ -1,0 +1,160 @@
+/* ================================== */
+/* GAYA UNTUK TOP SELLER MENU (SLIDER)*/
+/* ================================== */
+
+.menu {
+    margin: 0 20px;
+}
+
+.menu-hero {
+    padding-top: 100px;
+}
+
+.menu-item {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    display: flex !important;
+    /* !important untuk mengatasi inline style dari slick */
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 300px;
+    /* Menyesuaikan tinggi gambar slider */
+    object-fit: cover;
+}
+
+.menu-item-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.menu-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #FFB30E;
+}
+
+.menu-item p {
+    margin-bottom: 1rem;
+    color: #666;
+    flex-grow: 1;
+}
+
+/* --- Search Bar & Full Menu Button --- */
+.search-container {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+#menu-search-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-right: none;
+    border-radius: 30px 0 0 30px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#menu-search-input:focus {
+    border-color: #FFB30E;
+}
+
+#menu-search-button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: 2px solid #FFB30E;
+    background-color: #FFB30E;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 30px 30px 0;
+    transition: background-color 0.3s;
+}
+
+#menu-search-button:hover {
+    background-color: #e6a20d;
+    border-color: #e6a20d;
+}
+
+.full-menu-container {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.full-menu-button {
+    display: inline-block;
+    font-weight: bold;
+    color: #FFB30E;
+    border: 2px solid #FFB30E;
+    background-color: transparent;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.full-menu-button:hover {
+    background-color: #FFB30E;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(255, 179, 14, 0.4);
+}
+
+.full-menu-button i {
+    margin-left: 0.5rem;
+}
+
+/* --- Slick Slider Specific Styles --- */
+.slick-prev:before,
+.slick-next:before {
+    font-size: 30px;
+    color: #FFB30E;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.slick-prev:hover::before,
+.slick-next:hover::before {
+    opacity: 1;
+}
+
+.slick-prev {
+    left: -25px;
+}
+
+.slick-next {
+    right: -25px;
+}
+
+.slick-dots li button:before {
+    font-size: 12px;
+    color: #FFB30E;
+    opacity: 0.5;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        margin: 0;
+    }
+}
