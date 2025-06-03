@@ -55,4 +55,25 @@ $(document).ready(function () {
             menuSection.append('<p class="menu-not-found" style="color:red;">Maaf, gagal memuat menu.</p>');
         }
     });
+
+    // ==================================
+    // ===== KODE UNTUK HAMBURGER MENU =====
+    // ==================================
+    $('#mobile-menu').on('click', function () {
+        // Saat tombol hamburger (#mobile-menu) di-klik,
+        // tambahkan atau hapus class 'active' pada elemen .nav-links.
+        $('.nav-links').toggleClass('active');
+    });
+
+    // ==============================================================
+    // ===== OPSIONAL (SANGAT DIREKOMENDASIKAN UNTUK USER EXPERIENCE) =====
+    // Menutup menu secara otomatis setelah salah satu link di-klik
+    // ==============================================================
+    $('.nav-links a').on('click', function () {
+        // Cek apakah menu mobile sedang terlihat
+        if ($('#mobile-menu').is(':visible')) {
+            // Jika ya, hapus class 'active' untuk menutup menu
+            $('.nav-links').removeClass('active');
+        }
+    });
 });
